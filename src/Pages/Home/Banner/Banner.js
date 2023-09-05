@@ -6,33 +6,23 @@ const Banner = () => {
         <div>
             
 
-            <div className="hero min-h-screen  bg-green-950 h-[400px]">
+            <div className="hero bg-green-950 h-full lg:h-[520px] ">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
      
-      <img src={b1} alt="" />
+      <img className='w-[740px] pt-12'  src={b1} alt="" />
     </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <div className="card-body">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Email</span>
-          </label>
-          <input type="text" placeholder="email" className="input input-bordered" />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
-          <input type="text" placeholder="password" className="input input-bordered" />
-          <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
-        </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
-        </div>
-      </div>
+    <div className="flex-shrink-0 w-full max-w-sm  ">
+            <div>
+              <h1 className='text-white text-2xl mb-3 lg:text-5xl'>Modern Interior <br/> Design Studio</h1>
+              <p className='text-gray-300 py-10'>Donec vitae odio quis nisl dapibus malesuada.
+                 Nullam ac aliquet velit.
+                  Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                  <div className=' '>
+                    <button className='btn rounded-none text-white bg-orange-600 hover:bg-orange-700 border-none'>Shop Now</button>
+                    <button className='btn rounded-none mx-2 bg-green-950 text-white hover:bg-green-950  '>Explore</button>
+                  </div>
+            </div>
     </div>
   </div>
 </div>
