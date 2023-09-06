@@ -57,13 +57,24 @@ const Shop = () => {
         },
     ]
     return (
-        <div>
+        <div className='mb-[100px]'>
             <div className='w-full mx-auto  top-0 flex justify-center items-center h-[300px] bg-green-950'>
                 <h1 className='text-white text-[50px]'>Shop</h1>
             </div>
 
-                 <div className='max-w-[1640] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-28  px-[100px]'>
-
+                 <div className='max-w-[1640] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16 px-[20px]  lg:px-[100px] '>
+                 {
+                exploreData.map((e)=>(
+                    <div key={e.id} className=' cursor-pointer cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
+                        <img className='' src={e.img} alt="" />
+                        <div className='pt-7 text-center'>
+                            <p>{e.name}</p>
+                            <p className='font-bold'>{e.price}</p>
+                             <div className='cart-hide'>< AiOutlinePlus size={30} className='justify-between items-center w-full mt-[-5px] ml-[50px] md:ml-[70px] lg:ml-[80px]'/></div>
+                        </div>
+                    </div>
+                ))
+              }
                  </div>
 
         </div>

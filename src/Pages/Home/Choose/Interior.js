@@ -1,8 +1,33 @@
 import React from 'react';
 import img1 from '../../../assets/explore/img1.jpg'
 import img2 from '../../../assets/explore/img2.jpg'
+import e1 from '../../../assets/explore/e1.png'
+import e2 from '../../../assets/explore/e2.png'
+import e3 from '../../../assets/explore/e3.png'
+import { Link } from 'react-router-dom';
 
 const Interior = () => {
+    const exploreData=[
+        {
+            id:1,
+            img:e1,
+            name:"Nordic Chair",
+            info:'Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio'
+
+        },
+        {
+            id:2,
+            img:e2,
+            name:"Kruzo Aero Chair",
+            info:'Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio'
+        },
+        {
+            id:3,
+            img:e3,
+            name:"Ergonomic chair",
+            info:'Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio'
+        },
+    ]
     return (
         <div>
             <div className="hero  mb-[200px] lg:px-[100px] ">
@@ -22,6 +47,29 @@ const Interior = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            <div>
+                <div className='mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mt-16  px-[20px] md:px-[20px] lg:px-[100px]'>
+                    {
+                        exploreData.map((e)=>(
+                            <div className='flex h-[200px]'>
+                                <div>
+                                    <img className='w-[200px] h-[120px]' src={e.img} alt="" />
+                                </div>
+                                <div className='pt-[10px] px-2'>
+                                    <p className='font-bold'>{e.name}</p>
+                                    <p className='text-gray-400 py-2'>{e.info}</p>
+                                    <Link className='text-green-900'>Read More</Link>
+                                </div>
+                            </div>
+                        ))
+                    }
+
+                </div>
+            </div>
+
         </div>
     );
 };
