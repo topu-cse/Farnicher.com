@@ -41,8 +41,8 @@ const Explore = () => {
               {/* cart */}
               {
                 exploreData.map((e)=>(
-                    <div className=' cursor-pointer cart'>
-                        <img src={e.img} alt="" />
+                    <div className=' cursor-pointer cart shadow-lg hover:scale-105 duration-300 '>
+                        <img className='' src={e.img} alt="" />
                         <div className='pt-7 text-center'>
                             <p>{e.name}</p>
                             <p>{e.price}</p>
