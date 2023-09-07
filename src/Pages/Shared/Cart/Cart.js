@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from '../../../assets/explore/e1.png'
 import img2 from '../../../assets/explore/e2.png'
 import img3 from '../../../assets/explore/e3.png'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     
@@ -102,7 +103,7 @@ const Cart = () => {
                     <p>Total</p>
                     <p className='font-bold pl-[125px]'>$230.00</p>
                 </div>
-                <button className='btn rounded-none  bg-green-950 text-white hover:bg-green-950 mt-5'> Proceed To Checkout</button>
+                <Link to={'/checkout'}> <button className='btn rounded-none  bg-green-950 text-white hover:bg-green-950 mt-5'> Proceed To Checkout</button></Link>
                </div>
 
         </div>
