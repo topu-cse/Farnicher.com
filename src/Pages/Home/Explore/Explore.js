@@ -30,7 +30,7 @@ const Explore = () => {
     ]
     return (
          <div>
-            <div className='max-w-[1640] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-28 mx-[10px]  lg:px-[100px]'>
+            <div className='max-w-[1640] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-28 mx-[60px]  lg:px-[100px]'>
               <div>
                   <h1 className='text-4xl  font-bold'> Crafted with excellent  material.</h1>
                   <p>Donec vitae odio quis nisl dapibus malesuada. 
@@ -46,8 +46,8 @@ const Explore = () => {
                         <img className='' src={e.img} alt="" />
                         <div className='pt-7 text-center'>
                             <p>{e.name}</p>
-                            <p>{e.price}</p>
-                             <div className='cart-hide'>< AiOutlinePlus size={30} className='justify-between items-center w-full mt-2 ml-[80px]'/></div>
+                            <p className='pb-[10px]'>{e.price}</p>
+                             <div className='cart-hide'>< AiOutlinePlus size={30} className='justify-between items-center w-full mt-[-14px] ml-[70px]'/></div>
                         </div>
                     </div>
                 ))

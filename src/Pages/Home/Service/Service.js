@@ -4,6 +4,8 @@ import { FaShippingFast } from "react-icons/fa";
 import { BsBagFill } from "react-icons/bs";
 import { CgSupport } from "react-icons/cg";
 import { MdAssignmentReturn } from "react-icons/md";
+import Explore from '../Explore/Explore';
+import Testimonials from './Testimonials';
 const Service = () => {
     return (
         <div>
@@ -42,7 +44,7 @@ const Service = () => {
                 <div>
                       
 
-                          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 px-[40px] '>
+                          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 px-[30px] '>
                                
                           <div className='mb-5'>
                  <FaShippingFast size={40} />
@@ -58,7 +60,7 @@ const Service = () => {
            <div className='mb-5'>
                <BsBagFill size={40}/>
                <div >
-                <h6 className='py-2 font-bold'>Fast & Free Shipping</h6>
+                <h6 className='py-2 font-bold'>Easy to Shop</h6>
                 <p className='text-gray-500'>Donec vitae odio quis nisl
                      dapibus malesuada. 
                      Nullam ac aliquet velit.
@@ -69,7 +71,7 @@ const Service = () => {
            <div className='mb-5'>
                <CgSupport size={40}/>
                <div>
-                <h6 className='py-2 font-bold'>Fast & Free Shipping</h6>
+                <h6 className='py-2 font-bold'>24/7 Support</h6>
                 <p className='text-gray-500'>Donec vitae odio quis nisl
                      dapibus malesuada. 
                      Nullam ac aliquet velit.
@@ -80,7 +82,7 @@ const Service = () => {
            <div className='mb-5'>
                <MdAssignmentReturn size={40}/>
                <div>
-                <h6 className='py-2 font-bold'>Fast & Free Shipping</h6>
+                <h6 className='py-2 font-bold'>Hassle Free Returns</h6>
                 <p className='text-gray-500'>Donec vitae odio quis nisl
                      dapibus malesuada. 
                      Nullam ac aliquet velit.
@@ -95,7 +97,8 @@ const Service = () => {
             </div>
           </div>
 
-            
+            <Explore/>
+            <Testimonials/>
 
 
         </div>
