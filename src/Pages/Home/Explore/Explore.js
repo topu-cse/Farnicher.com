@@ -29,9 +29,10 @@ const Explore = () => {
         },
     ]
     return (
-        <div className='max-w-[1640] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-28  px-[100px]'>
+         <div>
+            <div className='max-w-[1640] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-28 mx-[10px]  lg:px-[100px]'>
               <div>
-                  <h1 className='text-4xl my-10 font-bold'> Crafted with excellent  material.</h1>
+                  <h1 className='text-4xl  font-bold'> Crafted with excellent  material.</h1>
                   <p>Donec vitae odio quis nisl dapibus malesuada. 
                     Nullam ac aliquet velit. Aliquam vulputate 
                     velit imperdiet dolor tempor tristique.</p>
@@ -52,6 +53,12 @@ const Explore = () => {
                 ))
               }
         </div>
+
+        
+
+
+
+         </div>
     );
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Checkout = () => {
     return (
@@ -155,7 +156,7 @@ const Checkout = () => {
                             </div>
                         </div>
 
-                        <button className='btn rounded-none  bg-green-950 text-white hover:bg-green-950 '>Place Order</button>
+                         <Link to={'/order'}><button className='btn rounded-none  bg-green-950 text-white hover:bg-green-950 '>Place Order</button></Link>
 
                     </div>
 

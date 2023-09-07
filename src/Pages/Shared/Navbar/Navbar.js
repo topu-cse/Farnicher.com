@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link to={'/shop'} className='hover:text-white'>Shop</Link>
           
         </li>
-        <li ><Link className='hover:text-white'>Item 3</Link></li>
+        <li ><Link to={'/service'} className='hover:text-white'>Service</Link></li>
       </ul>
     </div>
     <Link  className="btn btn-ghost normal-case text-xl hover:text-white">FARNI.</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
     <ul className=" menu-horizontal px-1">
       <li><Link to={'/'} className='hover:text-white px-2'>Home</Link></li>
        <li><Link to={'/shop'} className='hover:text-white px-2'>Shop</Link></li>
-      <li ><Link className='hover:text-white px-2'>Item 3</Link></li>
+       <li ><Link to={'/service'} className='hover:text-white px-2'>Service</Link></li>
     </ul>
   </div>
   <div className="flex-none">

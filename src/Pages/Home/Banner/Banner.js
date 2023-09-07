@@ -10,7 +10,7 @@ const Banner = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
      
-      <img className='w-[740px] pt-12'  src={b1} alt="" />
+      <img className='w-[740px] pt-12 lg:ml-[150px]'  src={b1} alt="" />
     </div>
     <div className="flex-shrink-0 w-full max-w-sm  ">
             <div>
