@@ -7,6 +7,9 @@ import Checkout from "../Pages/Shared/Cart/Checkout";
 import Order from "../Pages/Shared/Order/Order";
 import Service from "../Pages/Home/Service/Service";
 import Contact from "../Pages/Home/Service/Contact";
+import Login from "../Pages/Shared/From/Login";
+import SignUp from "../Pages/Shared/From/SignUp";
+import ForgetPassword from "../Pages/Shared/From/ForgetPassword";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
             {
                 path:'/contact',
                 element:<Contact/>
+            },
+            {
+                path:'/login',
+                element:<Login/>
+            },
+            {
+                path:'/signup',
+                element:<SignUp/>
+            },
+            {
+                path:'/forgetpasswold',
+                element:<ForgetPassword/>
             }
         ]
     }

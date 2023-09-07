@@ -19,6 +19,7 @@ const Navbar = () => {
         </li>
         <li ><Link to={'/service'} className='hover:text-white'>Service</Link></li>
         <li ><Link to={'/contact'} className='hover:text-white px-2'>Contact</Link></li>
+        <li ><Link to={'/login'} className='hover:text-white px-2'>Login</Link></li>
       </ul>
     </div>
     <Link  className="btn btn-ghost normal-case text-xl hover:text-white">FARNI.</Link>
@@ -29,6 +30,7 @@ const Navbar = () => {
        <li><Link to={'/shop'} className='hover:text-white px-2'>Shop</Link></li>
        <li ><Link to={'/service'} className='hover:text-white px-2'>Service</Link></li>
        <li ><Link to={'/contact'} className='hover:text-white px-2'>Contact</Link></li>
+       <li ><Link to={'/login'} className='hover:text-white px-2'>Login</Link></li>
     </ul>
   </div>
   <div className="flex-none">
