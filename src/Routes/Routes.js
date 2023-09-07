@@ -6,6 +6,7 @@ import Cart from "../Pages/Shared/Cart/Cart";
 import Checkout from "../Pages/Shared/Cart/Checkout";
 import Order from "../Pages/Shared/Order/Order";
 import Service from "../Pages/Home/Service/Service";
+import Contact from "../Pages/Home/Service/Contact";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:'/service',
                 element:<Service/>
+            },
+            {
+                path:'/contact',
+                element:<Contact/>
             }
         ]
     }
