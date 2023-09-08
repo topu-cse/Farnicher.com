@@ -10,6 +10,7 @@ import Contact from "../Pages/Home/Service/Contact";
 import Login from "../Pages/Shared/From/Login";
 import SignUp from "../Pages/Shared/From/SignUp";
 import ForgetPassword from "../Pages/Shared/From/ForgetPassword";
+import Profile from "../Pages/Shared/Cart/Profile";
 
 const router = createBrowserRouter([
     {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path:'/forgetpasswold',
                 element:<ForgetPassword/>
+            },
+            {
+                path:'/profile',
+                element:<Profile/>
             }
         ]
     }

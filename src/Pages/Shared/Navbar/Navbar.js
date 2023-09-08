@@ -51,13 +51,13 @@ const Navbar = () => {
       </label>
       <ul tabIndex={0} className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-green-900 ">
         <li  >
-          <Link  className="justify-between hover:text-white">
+          <Link to={'/profile'}  className="justify-between hover:text-white">
             Profile
             
           </Link>
         </li>
         
-        <li ><Link className='hover:text-white'>Sign In</Link></li>
+        <li ><Link className='hover:text-white'>Log Out</Link></li>
       </ul>
     </div>
     </div>

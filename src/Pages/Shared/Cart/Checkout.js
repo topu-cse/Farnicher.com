@@ -81,7 +81,7 @@ const Checkout = () => {
                     </div>
 
                     <h1 className='text-4xl font-bold my-5 pl-0 '>Your Order</h1>
-                    <div className='pl-5 md:pl-10 lg:pl-[70px] border-solid border-2  p-5 lg:p-5  lg:w-[600px]'>
+                    <div className='pl-5 md:pl-10 lg:pl-[70px] border-solid border-2  p-5 lg:p-5  lg:w-[600px] mb-5'>
                         <div className="overflow-x-auto">
                             <table className="table">
                                 {/* head */}

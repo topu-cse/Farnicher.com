@@ -1,6 +1,8 @@
 import React from 'react';
 import b1 from '../../../assets/banner/b1.png'
-
+import {GrLocation } from "react-icons/gr";
+import {MdEmail } from "react-icons/md";
+import {BsFillTelephoneMinusFill } from "react-icons/bs";
 const Contact = () => {
     return (
         <div>
@@ -24,6 +26,46 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+
+
+            {/* Location */}
+
+              <div className='flex justify-center items-center h-[300px] bg-base-200'>
+                <div className='max-w-[1640] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:pl-[50px]'>
+
+                  <div className='flex'>
+                        <div className='bg-green-900 p-[10px] rounded'>
+                           <GrLocation size={20}  className='mt-1  '/>
+                        </div>
+
+                        <div className='pl-[10px]'>
+                              <p>43 Raymouth Rd.<br/> Baltemoer, London 3910</p>
+                        </div>
+                  </div>
+
+
+                  <div className='flex'>
+                        <div className='bg-green-900 p-[10px] rounded'>
+                           <BsFillTelephoneMinusFill size={20}  className='mt-1  '/>
+                        </div>
+
+                        <div className='pl-[10px] mt-3'>
+                              <p>01703843108</p>
+                        </div>
+                  </div>
+
+                  <div className='flex'>
+                        <div className='bg-green-900 p-[10px] rounded'>
+                           <MdEmail size={20}  className='mt-1  '/>
+                        </div>
+
+                        <div className='pl-[10px] mt-3'>
+                              <p>Email:topu15-3604@diu.edu.bd</p>
+                        </div>
+                  </div>
+
+                </div>
+              </div>
 
 
                 {/* contact */}
