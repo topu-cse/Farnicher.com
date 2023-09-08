@@ -3,6 +3,7 @@ import b1 from '../../../assets/banner/b1.png'
 import {GrLocation } from "react-icons/gr";
 import {MdEmail } from "react-icons/md";
 import {BsFillTelephoneMinusFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 const Contact = () => {
     return (
         <div>
@@ -19,8 +20,8 @@ const Contact = () => {
                                 Nullam ac aliquet velit.
                                 Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
                             <div className=' '>
-                                <button className='btn rounded-none text-white bg-orange-600 hover:bg-orange-700 border-none'>Shop Now</button>
-                                <button className='btn rounded-none mx-2 bg-green-950 text-white hover:bg-green-950  '>Explore</button>
+                            <Link to={'/shop'}><button className='btn rounded-none text-white bg-orange-600 hover:bg-orange-700 border-none'>Shop Now</button></Link>
+                    <Link to={'/shop'}> <button className='btn rounded-none mx-2 bg-green-950 text-white hover:bg-green-950  '>Explore</button></Link>
                             </div>
                         </div>
                     </div>
